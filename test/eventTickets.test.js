@@ -93,7 +93,7 @@ contract('EventTicket', function(accounts) {
 
                 assert.equal(postSaleAmount, (new BN(preSaleAmount).sub(new BN(ticketPrice)).sub(new BN(buyTxCost))).toString(), "overpayment should be refunded")
             })
-        })  
+        })
         
         describe("getRefund()", async() => {
 
